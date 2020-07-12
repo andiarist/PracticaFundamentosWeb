@@ -1,0 +1,69 @@
+.header-ficha video{
+	display: block;
+	width: 100%;
+	margin-top: var(--navbar-height);
+}
+
+.titulo{
+	text-align: center;
+	margin: 10px 0;
+}
+
+.ficha{
+	padding: 5px 10px;
+	text-align: center;
+}
+.ficha figcaption{
+	display: none;
+}
+.datos-serie{
+	text-align: justify;
+}
+.datos-serie .sinopsis{
+	margin-bottom: 20px;
+}
+.datos-serie span{
+	color: #9DA2AB;
+	line-height: 2rem;
+}
+
+.episodios{
+	position: relative;
+}
+.episodios .icon-play3{
+	display: none;
+}
+.episodios:hover > .icon-play3{
+  	display: inline-block;
+	position: absolute;
+	top:30%;
+	left: 35%;
+	color: var(--font-color);
+	font-size: 3em;
+	border: 5px solid var(--font-color);
+	border-radius: 50%;
+	padding: 5px;
+}
+.episodios:hover > .icon-play3:hover{
+	color: gold;
+	border-color: gold;
+}
+
+
+
+
+@media all and (min-width: 768px){
+	.ficha{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 15px;
+	}
+	.ficha figcaption{
+		display: block;
+	}
+}
+@media all and (min-width: 991px){
+	.ficha{
+		grid-template-columns: 1fr 2fr;
+	}
+}

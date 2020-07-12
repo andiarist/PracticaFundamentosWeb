@@ -1,0 +1,10 @@
+.logo{
+	font-family: 'Bangers', cursive;
+	font-size: 50px;
+	color: #048D48;
+	letter-spacing: 0.125em;
+	text-shadow: 2px 2px #A5FBD0;	
+	line-height: var(--navbar-height);
+	padding-right: 10px;
+}
+

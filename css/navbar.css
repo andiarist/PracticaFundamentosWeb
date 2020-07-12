@@ -1,0 +1,117 @@
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--navbar-height);
+	background-color: rgba(20, 20, 20, 0.7);	
+	text-align: center;
+	z-index: 999;
+}
+
+.logo{
+	font-family: 'Bangers', cursive;
+	font-size: 50px;
+	color: #048D48;
+	letter-spacing: 0.125em;
+	text-shadow: 2px 2px #A5FBD0;	
+	line-height: var(--navbar-height);
+	padding-right: 10px;
+}
+
+.navbar .burger-label{
+	height: var(--navbar-height);
+	position: absolute;
+	top: calc(var(--navbar-height) * 0.2);
+	left: 3px;
+	padding-left: 10px;
+	font-size: 30px;
+}
+
+.navbar .burger-label:before{
+	content: '';
+	background-color: #048D48;
+	width: 1em;
+	height: 0.15em;
+	position: absolute;
+	left: 0.1em;
+	top: 0.25em;
+	box-shadow: 0 0.25em 0 0 #048D48,
+				0 0.5em 0 0 #048D48;
+}
+
+/* menú cerrado */
+.navbar-list{
+	display: none;
+	margin: 0;
+}
+
+
+#burger-checkbox{
+	display: none;
+}
+
+ /* menú abierto */
+#burger-checkbox:checked ~ .navbar-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding-left: 10px;
+	background-color: rgba(20, 20, 20, 0.7);
+	width: 50%;
+
+}
+
+
+
+.navbar-item > a{
+	line-height: 3rem;
+	display: block;
+}
+.navbar input[type=search] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-size: 1.2em;
+  padding-left: 10px;
+}
+
+.navbar input[type=search]:focus {
+  width: 100%;
+}
+
+
+@media all and (min-width: 768px){
+	.navbar{
+		display: flex;
+		justify-items: space-between;
+	}
+	.navbar .burger-label{
+		display: none;
+	}
+
+	.logo{
+		padding-left: 20px;
+	}
+	.navbar-list{
+		display: flex;
+		flex-grow: 1;	
+		justify-content: flex-end;
+		flex-direction: row;
+		height: var(--navbar-height);
+		align-items: baseline;
+	}
+	.navbar-item > a{
+		padding: 0 1rem;
+		line-height: var(--navbar-height);
+	}
+	.navbar-item > a:hover{
+		background-color: black;
+		color: #A5FBD0;
+	}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Films - Una web para ver</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">	
+  <link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/404.css">
+</head>
+<body>  
+ <nav id="navbar" class="navbar">
+  	<div class="logo">FILMS</div>
+	<input type="checkbox" id="burger-checkbox">
+	<label for="burger-checkbox" class="burger-label"></label>
+  	<ul class="navbar-list">
+  		<li class="navbar-item"><a href="index.html#novedades">Novedades</a></li>
+  		<li class="navbar-item"><a href="index.html#series">Series</a></li>
+  		<li class="navbar-item"><a href="index.html#peliculas">Películas</a></li>
+  		<li class="navbar-item">
+  			<form id="search-bar" name="search-bar">
+  				<input type="search" class="search" name="search" placeholder="Buscar...">
+  			</form>
+  		</li>
+  		<li class="navbar-item"><a href="login.html"><span class="icon-cog"></span></a></li>
+  	</ul>  	 	
+  </nav>
+  <main>
+    <div class="wrapper-error">
+    	<section class="error404">
+	  		<h2 class="titulo-error">404 Página no encontrada</h2>
+	  		<p>Lo sentimos, no hemos encontrado la página que buscabas.</p>
+	  		<p>Te dejamos unas pistas de a dónde puedes ir ;)</p>
+	  		<ul>
+	  			<li><a href="index.html">Inicio</a></li>
+	  			<li><a href="ficha.html">Ficha</a></li>
+	  			<li><a href="login.html">Log Out</a> (no nos abandones!!!)</li>
+	  		</ul>  		
+	  	</section>
+	  	<aside>
+			<img src="img/wally.png" alt="">
+		</aside>
+    </div>  	
+  	
+  </main>
+
+  <footer class="footer footer-error">
+  	<p>Práctica de Fundamentos Web</p>
+  </footer>	
+</body>
+</html>

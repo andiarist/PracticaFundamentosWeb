@@ -1,0 +1,44 @@
+.wrapper-error{
+	margin-top: var(--navbar-height);
+}
+
+.error404{
+	padding: 10px;
+}
+.titulo-error{
+	font-family: 'Bangers', cursive;
+	font-size: 40px;
+	color: #A5FBD0;
+	letter-spacing: 0.125em;
+	text-shadow: 2px 2px #048D48;
+	padding: 10px 0;
+}
+
+.error404 ul{
+	list-style: square;
+	margin-left: 30px;
+}
+.error404 li{
+	line-height: 2em;
+}
+.error404 a{
+	color: #FAA5A5;
+}
+.error404 a:hover::after{
+	content: " >>";
+}
+.error404 a:hover{
+	text-decoration: underline;
+}
+
+@media all and (min-width: 520px){
+	.wrapper-error{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.footer-error{	
+		position: absolute;
+		bottom: 0;
+	}
+}

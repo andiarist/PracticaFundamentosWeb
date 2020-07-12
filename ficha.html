@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Films - Una web para ver</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/rejilla.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/ficha.css">
+</head>
+<body>
+  
+  <nav id="navbar" class="navbar">
+  	<div class="logo">FILMS</div>
+	<input type="checkbox" id="burger-checkbox">
+	<label for="burger-checkbox" class="burger-label"></label>
+  	<ul class="navbar-list">
+  		<li class="navbar-item"><a href="index.html#novedades">Novedades</a></li>
+  		<li class="navbar-item"><a href="index.html#series">Series</a></li>
+  		<li class="navbar-item"><a href="index.html#peliculas">Películas</a></li>
+  		<li class="navbar-item">
+  			<form id="search-bar" name="search-bar">
+  				<input type="search" class="search" name="search" placeholder="Buscar...">
+  			</form>
+  		</li>
+  		<li class="navbar-item"><a href="login.html"><span class="icon-cog"></span></a></li>
+  	</ul>  	 	
+  </nav>
+  <header class="header-ficha">
+  	<video muted controls autoplay="">
+        <source src="video/tbbt-trailer.mp4" type="video/mp4">
+        <source src="video/tbbt-trailer.ogg" type="video/ogg">
+      Tu navegador no implementa el elemento <code>video</code>.
+    </video>  
+  	<h1 class="titulo">The Big Bang Theory</h1>  	
+  </header>
+  <main class="main">
+  	<section class="ficha">
+  	  <figure class="episodios">
+        <a href=""><img src="img/tbbt01.jpg" alt="Capitulo 1" class="capitulo">
+        <figcaption>Empezar a ver >> </figcaption></a>
+      </figure>
+      <article class="datos-serie">
+        <p class="sinopsis">Leonard y Sheldon son dos físicos brillantes, de esos superdotados que comprenden el funcionamiento del universo. Pero esa inteligencia no les ayuda a relacionarse con la gente, y menos aún con las mujeres. Esta situación empieza a cambiar cuando Penny, una chica preciosa de espíritu libre, se muda al piso de enfrente. A Sheldon, el compañero de piso de Leonard, le basta con pasar las noches jugando al Scrabble en klingon con sus amigos y compañeros de trabajo del Instituto de Tecnología de California socialmente disfuncionales, Wolowitz y Koothrappali. Sin embargo, Leonard ve en Penny todo un nuevo universo de posibilidades… incluido el amor.</p>
+        <ul>
+          <li><span>Año:</span> 2007</li>
+          <li><span>Reparto:</span> Jim Parsons, Johnny Galecki, Kaley Cuoco, Kunal Nayyar, Simon Helberg</li>
+          <li><span>Creadores:</span> Bill Prady, Chuck Lorre</li>
+          <li><span>Clasificación:</span> +7</li>
+        </ul>
+      </article>
+  	</section>
+  	<section>
+  	  <h1 class="border">Episodios</h1>
+  	  <div class="flex-container">  			
+  		  <figure class="item episodios">
+          <a href=""><img src="img/cap01.jpg" alt="Capitulo 1" class="capitulo">
+          <figcaption>Título Ep. 1</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap02.jpg" alt="Capitulo 2" class="capitulo">
+          <figcaption>Título Ep. 2</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap03.jpg" alt="Capitulo 3" class="capitulo">
+          <figcaption>Título Ep. 3</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap04.jpg" alt="Capitulo 4" class="capitulo">
+          <figcaption>Título Ep. 4</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap05.jpg" alt="Capitulo 5" class="capitulo">
+          <figcaption>Título Ep. 5</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure> 
+        <figure class="item episodios">
+          <a href=""><img src="img/cap06.jpg" alt="Capitulo 6" class="capitulo">
+          <figcaption>Título Ep. 6</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap07.jpg" alt="Capitulo 7" class="capitulo">
+          <figcaption>Título Ep. 7</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap08.jpg" alt="Capitulo 8" class="capitulo">
+          <figcaption>Título Ep. 8</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap09.jpg" alt="Capitulo 9" class="capitulo">
+          <figcaption>Título Ep. 9</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+        <figure class="item episodios">
+          <a href=""><img src="img/cap10.jpg" alt="Capitulo 10" class="capitulo">
+          <figcaption>Título Ep. 10</figcaption></a>
+          <a href="" class="icon-play3"></a>
+        </figure>
+  	  </div>		
+  	</section>
+  </main>
+	
+  <footer class="footer">
+    <p>Práctica de Fundamentos Web</p>
+  </footer>
+  
+</body>
+</html>
